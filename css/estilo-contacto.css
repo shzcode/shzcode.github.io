@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Josefin Sans";
+  background-color: rgb(15, 15, 15);
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.div-logo {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  padding: 1vw;
+  transition: 0.2s ease;
+}
+
+.div-logo:hover {
+  transform: scale(1.1);
+}
+
+.div-logo:active {
+  transform: scale(0.9);
+}
+
+.logo {
+  position: fixed;
+  width: 1.5vw;
+}
+
+.main-header {
+  z-index: 2;
+  position: fixed;
+  margin: 0;
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 1.5vw;
+  transform: translateX(100%);
+  background-color: rgba(20, 20, 20, 0.8);
+  transition: 0.4s ease-in-out;
+}
+
+.navigation li {
+  list-style: none;
+  padding-top: 7.5%;
+  padding-bottom: 7.5%;
+}
+
+.navigation a {
+  color: white;
+  display: block;
+  padding: 1vw;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navigation a:hover {
+  color: rgba(220, 20, 60, 0.75);
+  transform: scale(1.1);
+}
+
+.navigation a:active {
+  transform: scale(0.9);
+}
+
+#btn-nav {
+  display: none;
+}
+
+#btn-nav:checked ~ nav {
+  transform: translateX(0);
+}
+
+.btn-nav {
+  z-index: 2;
+  color: white;
+  position: fixed;
+  font-size: 1.5vw;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  padding: 1vw;
+  transition: 0.2s ease;
+}
+
+.btn-nav:hover {
+  transform: scale(1.1);
+}
+
+.btn-nav:active {
+  transform: scale(0.9);
+}
+
+.pie {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  bottom: 0;
+  font-size: 1vw;
+}
+
+.pie-child {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vw;
+  width: 100%;
+}
+
+.div-logo-pedro {
+  text-align: center;
+  margin-bottom: -0.1vw;
+}
+
+.logo-pedro {
+  width: 10vw;
+  transition: 0.3s;
+}
+
+.logo-pedro:hover {
+  transform: scale(1.05);
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook {
+  color: gray;
+  text-decoration: none;
+  font-size: 1vw;
+  margin-right: 1.5vw;
+  transition: 0.4s;
+}
+
+.youtube {
+  color: gray;
+  text-decoration: none;
+  font-size: 1vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  transition: 0.4s;
+}
+
+.flymovie {
+  width: 2.5vw;
+  transition: 0.4s;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+
+.instagram {
+  color: gray;
+  text-decoration: none;
+  font-size: 1vw;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+  transition: 0.4s;
+}
+
+.google {
+  color: gray;
+  text-decoration: none;
+  font-size: 1vw;
+  margin-left: 1.5vw;
+  transition: 0.4s;
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.youtube:hover {
+  color: rgb(255, 49, 49);
+}
+
+.flymovie:hover {
+  color: black;
+}
+
+.instagram:hover {
+  color: #c32aa3;
+}
+
+.google:hover {
+  color: green;
+}
+
+.div-facebook,
+.div-youtube,
+.div-flymovie,
+.div-instagram,
+.div-google {
+  transition: 0.5s;
+}
+
+.div-facebook:hover,
+.div-youtube:hover,
+.div-flymovie:hover,
+.div-instagram:hover,
+.div-google:hover {
+  transform: scale(1.1);
+}
+
+ul {
+  padding: 1vw;
+}
+
+:root {
+  --primary-color: #fcfdfd;
+  --secondary-color: #818386;
+  --bg-color: rgb(15, 15, 15);
+  --button-color: #818386;
+  --h1-color: #fcfdfd;
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  background: rgb(15, 15, 15);
+}
+
+.left-col {
+  width: 50%;
+  background-image: url("../imagenes/contacto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.right-col {
+  background: rgb(15, 15, 15);
+  width: 50%;
+  padding: 2%;
+}
+
+.labelform {
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 0.9vw;
+  display: block;
+}
+
+h1,
+.enviar {
+  font-weight: 400;
+  letter-spacing: 0.1vw;
+}
+
+h1 {
+  color: var(--h1-color);
+  text-transform: uppercase;
+  font-size: 1.75vw;
+  letter-spacing: 0.3vw;
+  font-weight: 300;
+}
+
+.p-form, .p-form-up {
+  color: var(--secondary-color);
+  font-size: 0.8vw;
+  letter-spacing: 0.01vw;
+  margin: 0.25vw 0;
+}
+
+form {
+  width: 100%;
+  position: relative;
+  margin-top: 2vw;
+  padding: 1vw 0;
+}
+
+input,
+textarea {
+  width: 40vw;
+  display: block;
+  transition: 0.3s;
+}
+
+.contact-icons i {
+  color: gray;
+}
+
+p,
+placeholder,
+input,
+textarea {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--primary-color);
+  opacity: 0.3;
+  text-transform: uppercase;
+  font-size: 0.6vw;
+  letter-spacing: 0.2vw;
+}
+
+input,
+textarea {
+  color: var(--primary-color);
+  font-weight: 500;
+  background: var(--bg-color);
+  border: none;
+  border-bottom: 0.1vw solid var(--secondary-color);
+  padding: 0.5vw 0;
+  margin-bottom: 1vw;
+  outline: none;
+  font-size: 1vw;
+}
+
+textarea {
+  resize: none;
+}
+
+.enviar {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: var(--button-color);
+  color: var(--bg-color);
+  width: 9vw;
+  height: 2vw;
+  border: none;
+  border-radius: 0.1vw;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.75vw;
+}
+
+input:hover,
+textarea:hover,
+button:hover {
+  opacity: 0.5;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  margin-top: 2%;
+}
+
+.location,
+.mail,
+.phone {
+  font-size: 1vw;
+  gap: 1vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+#success-msg {
+  width: 40vw;
+  margin: 0.125vw 0;
+  font-size: 0.75vw;
+  text-transform: uppercase;
+  font-family: "Jost";
+  color: var(--secondary-color);
+}
+
+#success-msg {
+  transition-delay: 3s;
+}
+
+.div-footer-p {
+  font-size: 0.6vw;
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #818386;
+  letter-spacing: 0.05vw;
+}
+
+.diferencia {
+  padding: 1vw 0;
+  width: 40vw;
+  display: block;
+  transition: 0.3s;
+  border: none;
+  border-bottom: 0.1vw solid var(--secondary-color);
+}
+
+.whats-float {
+  position: fixed;
+  transform:translate(108px,0px);
+  bottom: 5%;
+  right:0;
+  width:150px;
+  overflow: hidden;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 4px 0 0 4px;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+  vertical-align: middle
+}
+
+.whats-float a span {
+  color: white;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  position: absolute;
+  line-height: 16px;
+  font-weight: bolder;
+}
+
+.whats-float i {
+  font-size: 30px;
+  color: white;
+  line-height: 30px;
+  padding: 10px;
+  transform:rotate(0deg);
+  transition: all 0.5s ease-in-out;
+  text-align:center;
+}
+
+.whats-float:hover {
+  color: #FFFFFF;
+  transform:translate(0px,0px);
+}
+
+.whats-float:hover i  {
+  transform:rotate(360deg);
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  form,
+  input,
+  textarea,
+  .diferencia {
+    text-align: center;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+  }
+  input::placeholder {
+    font-size: 0.6rem;
+  }
+  textarea::placeholder {
+    font-size: 0.6rem;
+  }
+  .labelform {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .contact-container {
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+  .contact-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2.25rem;
+    padding: 1rem;
+  }
+  .contact-icons i {
+    font-size: 0.75rem;
+  }
+  .titulo {
+    font-size: 1.5rem;
+  }
+  .enviar {
+    margin: 1rem;
+    font-size: 0.5rem;
+    width: 5rem;
+    height: 1.5rem;
+  }
+  .left-col {
+    height: 0;
+    width: 0;
+    display: none;
+  }
+  .right-col {
+    padding-top: 12.5%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .p-form {
+    font-size: 0.6rem;
+    padding: 0.25rem;
+  }
+  .p-form-up {
+    font-size: 0.6rem;
+    padding: 0.25rem;
+    padding-bottom: 2rem;
+  }
+  .btn-nav {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .logo {
+    width: 1.9rem;
+    padding: 0.25rem;
+  }
+  nav {
+    width: 60%;
+  }
+  nav li {
+    font-size: 1rem;
+    padding: 1rem;
+    line-height: 3rem;
+  }
+  .logo-pedro {
+    width: 8rem;
+  }
+  .facebook {
+    font-size: 1rem;
+    margin-right: 1.25rem;
+  }
+  .youtube {
+    font-size: 1rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .flymovie {
+    width: 2rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .instagram {
+    font-size: 1rem;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+  }
+  .google {
+    font-size: 1rem;
+    margin-left: 1.25rem;
+  }
+  .div-footer-p {
+    font-size: 0.5rem;
+  }
+  .pie-child {
+    padding: 0.5rem;
+    gap: 0.75rem;
+  }
+}

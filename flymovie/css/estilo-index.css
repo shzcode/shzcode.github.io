@@ -1,0 +1,756 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveup {
+  from {
+    bottom: 0.5vw;
+  }
+  to {
+    bottom: 1vw;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(15, 15, 15);
+  font-family: "Josefin Sans";
+  scroll-behavior: smooth;
+  color: white;
+}
+
+.animator {
+  opacity: 0;
+  -webkit-animation: fadein 1s ease-in 1s forwards;
+  animation: fadein 1s ease-in 1s forwards;
+}
+
+.header {
+  height: 5%;
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.header-alt {
+  height: 5%;
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  transition: all 0.3s;
+}
+
+.div_logo {
+  width: 50%;
+  text-align: left;
+  padding: 1vmin;
+}
+
+.logo {
+  width: 6vmin;
+}
+
+.div_nav {
+  direction: rtl;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  padding: 2vmin;
+  gap: 4vmin;
+  text-align: right;
+}
+
+.div_nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.div_nav div {
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 2vmin;
+}
+
+.div_nav div:hover {
+  transform: scale(1.1);
+}
+
+.portada {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.myvideo {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-filter: blur(0.5rem) brightness(0.5);
+  filter: blur(0.5rem) brightness(0.5);
+}
+
+.logo_central {
+  position: relative;
+  width: 60vmin;
+  height: 30vmin;
+}
+
+.bloque1 {
+  position: relative;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.nosotros {
+  position: relative;
+  background-color: rgba(143, 24, 28, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 47.5vh;
+}
+
+.left-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-col img {
+  width: 100%;
+}
+
+.right-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vmin;
+  padding: 2vmin;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  text-align: justify;
+  font-size: 1.9vmin;
+}
+
+.right-col p {
+  padding: 1vmin;
+}
+
+.right-col a {
+  text-decoration: none;
+  text-decoration: underline;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+}
+
+.right-col a:hover {
+  color: rgb(140, 140, 140);
+}
+
+.servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  gap: 5vmin;
+  padding: 2vmin;
+  position: relative;
+  background-color: rgba(15, 15, 15, 0.5);
+  width: 100%;
+  height: 47.5vh;
+}
+
+.servicios b {
+  font-size: 5vmin;
+  overflow: hidden;
+  height: 6vmin;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.servicios p {
+  font-size: 4vmin;
+  padding: 2vmin;
+}
+
+.vwrap, .vslide { width: 100%; height: 100px; }
+.vwrap { overflow: hidden; }
+ 
+.vslide {
+  display: flex;
+  font-size: 7vmin;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.vmove { position: relative; bottom: 0%; }
+@keyframes slidev {
+  0% { bottom: 0; } 24% { bottom: 0; }
+  25% { bottom: 100%; } 49% { bottom: 100%; }
+  50% { bottom: 200%; } 74% { bottom: 200%; }
+  75% { bottom: 300%; } 99% { bottom: 300%; }
+  100% { bottom: 0; }
+}
+ 
+.vmove { animation: slidev 12s infinite; -webkit-animation: slidev 12s infinite; }
+.vmove:hover { animation-play-state: paused; }
+
+.poster {
+  border: 0.2vmin solid rgb(15, 15, 15);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  height: 100%;
+  flex-grow: 1;
+  transition: 0.5s;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.poster iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.poster-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.poster-img:hover {
+  transform: scale(1.05);
+}
+
+video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1%;
+}
+
+.vidfon {
+  border-radius: 0;
+}
+
+.led {
+  position: absolute;
+  top: 5vmin;
+  left: 5vmin;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.imgtop {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.imgcenter {
+  position: absolute;
+  z-index: 1;
+}
+.imgbot {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.pie {
+  background-color: rgb(15, 15, 15);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  bottom: 0;
+  font-size: 1vw;
+}
+
+.pie-child {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25vw;
+  width: 100%;
+}
+
+.div-footer-p {
+  font-size: 0.6vw;
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #818386;
+  letter-spacing: 0.05vw;
+}
+
+.div-logo-pedro {
+  text-align: center;
+  margin: -0.5vw;
+  margin-bottom: -1.25vw;
+}
+
+.logo-pedro {
+  width: 10vw;
+  transition: 0.3s;
+}
+
+.logo-pedro:hover {
+  transform: scale(1.05);
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook {
+  color: gray;
+  text-decoration: none;
+  font-size: 1vw;
+  margin-right: 1.5vw;
+  transition: 0.4s;
+}
+
+.youtube {
+  color: gray;
+  text-decoration: none;
+  font-size: 1vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  transition: 0.4s;
+}
+
+.flymovie {
+  width: 1vw;
+  transition: 0.4s;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+
+.instagram {
+  color: gray;
+  text-decoration: none;
+  font-size: 1vw;
+  margin-right: 1.5vw;
+  margin-left: 1.5vw;
+  transition: 0.4s;
+}
+
+.google {
+  color: gray;
+  text-decoration: none;
+  font-size: 1vw;
+  margin-left: 1.5vw;
+  transition: 0.4s;
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.youtube:hover {
+  color: rgb(255, 49, 49);
+}
+
+.flymovie:hover {
+  color: black;
+}
+
+.instagram:hover {
+  color: #c32aa3;
+}
+
+.google:hover {
+  color: green;
+}
+
+.div-facebook,
+.div-youtube,
+.div-flymovie,
+.div-instagram,
+.div-google {
+  transition: 0.5s;
+}
+
+.div-facebook:hover,
+.div-youtube:hover,
+.div-flymovie:hover,
+.div-instagram:hover,
+.div-google:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  animation: fadein 0.1s;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(0.5vw);
+  -webkit-backdrop-filter: blur(0.5vw);
+  background-color: hsla(0, 0%, 0%, 0.75);
+}
+
+.modal-content {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+}
+
+.close {
+  position: absolute;
+  z-index: 3;
+  top: 0.5%;
+  right: 1%;
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1vw;
+  margin-top: -2.5vw;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5vw;
+  transition: 0.6s ease;
+  border-radius: 0 0.2vw 0.2vw 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 0.2vw 0 0 0.2vw;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fa-play {
+  z-index: 1;
+  position: absolute;
+  font-size: 2.5vw;
+  color: crimson;
+  transition: 0.5s;
+}
+
+.fa-play:hover {
+  transform: scale(1.3);
+}
+
+.portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.video-portada {
+  border-radius: 0;
+}
+
+.h2-portada {
+  color: white;
+  font-size: 3vw;
+  z-index: 1;
+  filter: blur(0px);
+  position: absolute;
+  opacity: 75%;
+}
+
+.flecha {
+  position: absolute;
+  cursor: pointer;
+  bottom: 1vw;
+  color: white;
+  font-size: 3vw;
+  animation: moveup 1s ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.flecha a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75vw 1vw;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  background: transparent;
+  border: 0.1vw solid #e1e1e1;
+  font: 1vw/1.2 "Oswald", sans-serif;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s linear 0.05s;
+}
+
+.btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #e1e1e1;
+  z-index: 1;
+  opacity: 0;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+
+.btn::after {
+  transition: border 0.1s linear 0.05s;
+}
+
+.btn .btn-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.btn:hover {
+  color: #373737;
+  transition: color 0.1s linear 0s;
+}
+
+.btn:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+
+.btn:hover::after {
+  border-color: #373737;
+  transition: border 0.1s linear 0s;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .vslide {
+    font-size: 4vmin;
+  }
+  .div_nav {
+    width: auto;
+  }
+  .nosotros {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+  }
+  .left-col {
+    width: 100%;
+  }
+  .right-col {
+    width: 100%;
+    font-size: 3.5vmin;
+  }
+  .div_nav div {
+    font-size: 3vmin;
+  }
+  .wrapper {
+    flex-direction: row;
+    height: auto;
+  }
+  .poster {
+    width: 100%;
+    height: 50vh;
+  }
+  .logo-central {
+    width: 15rem;
+  }
+  .fa-play {
+    font-size: 2.5rem;
+  }
+  .h1-central {
+    font-size: 1.5rem;
+  }
+  .btn-nav {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .div_logo {
+    display: none;
+  }
+  .logo {
+    width: 4rem;
+    padding: 0.25rem;
+  }
+  .flecha {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 1rem;
+    border: 0.1rem solid #e1e1e1;
+    padding: 1rem;
+  }
+  nav {
+    width: 60%;
+  }
+  nav li {
+    font-size: 1rem;
+    padding: 1rem;
+    line-height: 3rem;
+  }
+  .logo-pedro {
+    width: 8rem;
+  }
+  .facebook {
+    font-size: 1rem;
+    margin-right: 1.25rem;
+  }
+  .youtube {
+    font-size: 1rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .flymovie {
+    width: 1rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+  .instagram {
+    font-size: 1rem;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+  }
+  .google {
+    font-size: 1rem;
+    margin-left: 1.25rem;
+  }
+  .div-footer-p {
+    font-size: 0.5rem;
+  }
+  .div-logo-pedro {
+    margin-bottom: -1rem;
+  }
+  .pie-child {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+}

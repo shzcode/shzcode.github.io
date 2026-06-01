@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://kit.fontawesome.com/a358b09030.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <title>Flymovie Fotografía - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/estilo-portfolio.css">
+    <link rel="icon" href="./imagenes/logos/favicon.png">
+    <meta name="description" content="Explora nuestro portfolio y descubre la magia de nuestras fotos y videos de bodas en Úbeda. 
+        Cada imagen y cada clip cuentan una historia única y emocionante, capturando la esencia y la belleza de cada momento especial. 
+        Déjate inspirar por nuestro trabajo y enamórate de nuestras creaciones.">
+</head>
+
+<body oncontextmenu="return false">
+    <header class="main-header">
+        <div class="div-logo">
+            <a href="index-2.html"><img class="logo" src="./imagenes/logos/logo.png" alt=""></a>
+        </div>
+        <label for="btn-nav" class="btn-nav">
+            <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" id="btn-nav">
+        <nav>
+            <ul class="navigation">
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="filmografia.html">FILMOGRAFÍA</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="portfolio-portada">
+        <img class="img-portada" src="./imagenes/portfolio/horizontal2.webp" alt="portada">
+        <div class="flecha">
+            <a href="#galeria"><i class="fa fa-chevron-down"></i></a>
+        </div>
+    </div>
+    <div id="galeria" class="image-gallery">
+        <div class="column">
+            <div onclick="myFunction(img1);currentSlide(1)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal1.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img2);currentSlide(2)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal4.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img3);currentSlide(3)" class="image-item">
+                <img src="./imagenes/portfolio/vertical1.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img4);currentSlide(4)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal8.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img5);currentSlide(5)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal10.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img6);currentSlide(6)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal12.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img7);currentSlide(7)" class="image-item">
+                <img src="./imagenes/portfolio/vertical5.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img8);currentSlide(8)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal17.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img9);currentSlide(9)" class="image-item">
+                <img src="./imagenes/portfolio/vertical2.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img10);currentSlide(10)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal16.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img11);currentSlide(11)" class="image-item">
+                <img src="./imagenes/portfolio/vertical9.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img12);currentSlide(12)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal20.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img13);currentSlide(13)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal22.webp" alt="" />
+            </div>
+        </div>
+        <div class="column">
+            <div onclick="myFunction(img14);currentSlide(14)" class="image-item">
+                <img src="./imagenes/portfolio/vertical3.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img15);currentSlide(15)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal6.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img16);currentSlide(16)" class="image-item">
+                <img src="./imagenes/portfolio/vertical13.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img17);currentSlide(17)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal9.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img18);currentSlide(18)" class="image-item">
+                <img src="./imagenes/portfolio/vertical4.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img19);currentSlide(19)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal13.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img20);currentSlide(20)" class="image-item">
+                <img src="./imagenes/portfolio/vertical6.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img21);currentSlide(21)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal14.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img22);currentSlide(22)" class="image-item">
+                <img src="./imagenes/portfolio/vertical8.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img23);currentSlide(23)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal18.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img24);currentSlide(24)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal21.webp" alt="" />
+            </div>
+        </div>
+        <div class="column">
+            <div onclick="myFunction(img25);currentSlide(25)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal3.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img26);currentSlide(26)" class="image-item">
+                <img src="./imagenes/portfolio/vertical12.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img27);currentSlide(27)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal5.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img28);currentSlide(28)" class="image-item">
+                <img src="./imagenes/portfolio/vertical11.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img29);currentSlide(29)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal7.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img30);currentSlide(30)" class="image-item">
+                <img src="./imagenes/portfolio/vertical10.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img31);currentSlide(31)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal11.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img32);currentSlide(32)" class="image-item">
+                <img src="./imagenes/portfolio/vertical7.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img33);currentSlide(33)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal15.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img34);currentSlide(34)" class="image-item">
+                <img src="./imagenes/portfolio/horizontal19.webp" alt="" />
+            </div>
+            <div onclick="myFunction(img35);currentSlide(35)" class="image-item">
+                <img src="./imagenes/portfolio/vertical14.webp" alt="" />
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="mySlides">
+                <img id="img1" src="./imagenes/portfolio/horizontal1.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img2" src="./imagenes/portfolio/horizontal4.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img3" src="./imagenes/portfolio/vertical1.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img4" src="./imagenes/portfolio/horizontal8.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img5" src="./imagenes/portfolio/horizontal10.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img6" src="./imagenes/portfolio/horizontal12.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img7" src="./imagenes/portfolio/vertical5.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img8" src="./imagenes/portfolio/horizontal17.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img9" src="./imagenes/portfolio/vertical2.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img10" src="./imagenes/portfolio/horizontal16.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img11" src="./imagenes/portfolio/vertical9.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img12" src="./imagenes/portfolio/horizontal20.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img13" src="./imagenes/portfolio/horizontal22.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img14" src="./imagenes/portfolio/vertical3.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img15" src="./imagenes/portfolio/horizontal6.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img16" src="./imagenes/portfolio/vertical13.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img17" src="./imagenes/portfolio/horizontal9.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img18" src="./imagenes/portfolio/vertical4.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img19" src="./imagenes/portfolio/horizontal13.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img20" src="./imagenes/portfolio/vertical6.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img21" src="./imagenes/portfolio/horizontal14.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img22" src="./imagenes/portfolio/vertical8.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img23" src="./imagenes/portfolio/horizontal18.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img24" src="./imagenes/portfolio/horizontal21.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img25" src="./imagenes/portfolio/horizontal3.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img26" src="./imagenes/portfolio/vertical12.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img27" src="./imagenes/portfolio/horizontal5.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img28" src="./imagenes/portfolio/vertical11.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img29" src="./imagenes/portfolio/horizontal7.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img30" src="./imagenes/portfolio/vertical10.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img31" src="./imagenes/portfolio/horizontal11.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img32" src="./imagenes/portfolio/vertical7.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img33" src="./imagenes/portfolio/horizontal15.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img34" src="./imagenes/portfolio/horizontal19.webp" alt="" />
+            </div>
+            <div class="mySlides">
+                <img id="img35" src="./imagenes/portfolio/vertical14.webp" alt="" />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <footer class="pie">
+        <div class="pie-child">
+            <div class="div-logo-pedro">
+                <a href="./index-2.html">
+                    <img class="logo-pedro" src="./imagenes/logos/logo_pedro_blanco.png" alt="">
+                </a>
+            </div>
+            <div class="div-footer-p">
+                <p>
+                    © COPYRIGHT FLYMOVIE | TODOS LOS DERECHOS RESERVADOS
+                </p>
+            </div>
+            <div class="social-media">
+                <div class="div-facebook">
+                    <a class="facebook" href="https://www.facebook.com/flymovie/">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="div-youtube">
+                    <a class="youtube" href="https://www.youtube.com/channel/UCYPESTzCiSiM4y74VpDWJyg">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="div-flymovie">
+                    <a href="./flymovie/index.html">
+                        <img class="flymovie" src="./imagenes/logos/logo_flymovie_blanco.png" alt="">
+                    </a>
+                </div>
+                <div class="div-instagram">
+                    <a class="instagram" href="https://www.instagram.com/flymoviedron_fotografia/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="div-google">
+                    <a class="google"
+                        href="https://www.google.com/search?q=Flymovie%20Fot%C3%B3grafos%20Rese%C3%B1as&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MzYyMzS2MDKzMDcwNLUwtjS12MDI-IpR1i2nMje_LDNVwS2_5PDm9KLEtPxihaDU4tTDGxOLF7HilwcA2GlNVFoAAAA&rldimm=6326138268701583958&tbm=lcl&cs=1&hl=es&sa=X&ved=0CA8Q5foLahcKEwiI-oOPnfuFAxUAAAAAHQAAAAAQOw&biw=1629&bih=939&dpr=2.2#arid=ChdDSUhNMG9nS0VJQ0FnSUNCaHJ5NjB3RRAB">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var modal = document.getElementById('myModal');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        document.addEventListener("keydown", (event) => {
+            if (event.code === "Escape") {
+                closeModal();
+            }
+            if (event.code === "ArrowRight") {
+                plusSlides(1);
+            }
+            if (event.code === "ArrowLeft") {
+                plusSlides(-1);
+            }
+        });
+
+        document.addEventListener("fullscreenchange", (event) => {
+            if (document.fullscreenElement == null) {
+                closeModal()
+            }
+        });
+
+        function myFunction(x) {
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                closeModal();
+            } else {
+                openModal2(x);
+            }
+        }
+
+        function openModal(x) {
+            x.requestFullscreen();
+            document.getElementById("myModal").style.display = "flex";
+        }
+
+        function openModal2(x) {
+            document.getElementById("myModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+
+            }
+            slides[slideIndex - 1].style.display = "flex";
+        }
+    </script>
+</body>
+
+</html>
